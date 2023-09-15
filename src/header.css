@@ -1,0 +1,68 @@
+.text{
+    
+    animation-name: animate;
+    animation-delay: 2s linear;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    transition: .5s linear;
+}
+@keyframes animate{
+    0%{
+        color: cyan;
+    }
+    25%{
+        color:red;
+    }
+    50%{
+        color: blue;
+    }
+    75%{
+        color: yellow;
+    }
+    75%{
+        color: green;
+    }
+}
+.navbar-toggler:focus, 
+.navbar-toggler:active ,
+.navbar-toggler-icon:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: none !important;
+    margin-right:none !important;
+    
+}
+.navbar-toggler{
+    margin-right: 0 !important;
+    padding: 0;
+}
+.link{
+    position: relative;
+}
+.link::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 5px;
+    bottom: 0;
+    background-color: brown;
+    transition: width 1s;
+}
+.link:focus::before{
+    width: 60%;
+}
+.ai{
+    top:20%;
+
+   right: 2%;
+}
+.affix {
+   
+    top: 0 !important;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+
+  .affix + .container-fluid {
+    padding-top: 70px !important;
+  }

@@ -1,0 +1,36 @@
+.div2{
+    
+    transition: .25s all;
+    
+}
+
+.cardparent{
+    
+
+    overflow: hidden;
+    transition: .25s all;
+
+}
+  .cardparent:hover{
+    transition: .25s all;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 4px gray;
+    transform: scale(1.02);
+  }
+.cardparent:hover .icon-style{
+    transition: .25s all;
+    transform: translate(0px,0px);
+    cursor: pointer; 
+}
+.div2{
+    transition: .25s all;
+    visibility: none;
+}
+.cardparent:hover .div1{
+    transition: .25s all;
+    visibility: none;
+}
+.cardparent:hover .div2{
+    transition: .25s all;
+    visibility: visible;
+}
